@@ -7,7 +7,7 @@
 */
 
 // Array of alphabet letters
-const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','x','y','z'];
+const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 // For each letter in alphabet array, concatenate the letter to the variable result.
 let result = '';
