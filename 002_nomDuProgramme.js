@@ -1,3 +1,19 @@
-/* Nom du Programme */
+/**
+* Nom du Programme
+*/
 
-//Consigne: Creer un programme qui affiche son nom de fichier (expected output example: 002_nomDuProgramme.js
+/*
+* Write a program that displays its filename as <filename>.<extension>
+*
+* Doc sources: https://nodejs.org/api/all.html#all_path_pathdirnamepath https://nodejs.org/api/path.html#pathbasenamepath-ext
+*/
+
+// The path module provides utilities for working with file and directory paths.
+const path = require('path');
+
+// __filename contains the absolute file path of the current module.
+// console.log(__filename); output is /media/.../.../Epreuve_de_la_Terre/002_nomDuProgramme.js
+
+// path.basename() returns the last portion of a path
+const filename = path.basename(__filename);
+console.log(filename);
