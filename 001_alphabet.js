@@ -7,5 +7,4 @@ let result = '';
 for (var i = 0; i < alphabet.length; i++) {
   result += alphabet[i];
 }
-console.log(result);
-console.log(); //retour a la ligne
+console.log(result + "\n");
