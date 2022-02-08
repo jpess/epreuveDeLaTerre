@@ -7,7 +7,7 @@
 */
 const { argv } = require('process');
 
-if( argv.lenght !== 4){
+if( argv.length !== 4){
   console.log("Veuillez entrer 2 arguments.");
 } else if( isNaN(argv[2] || isNaN(argv[3]))){
   console.log("Veuillez entrer 2 nombres.");
@@ -18,4 +18,5 @@ if( argv.lenght !== 4){
   }
   console.log(result);
   //We can also use Math.pow(argv[2], argv[3]);
+  //console.log(Math.pow(argv[2], argv[3]));
 }
