@@ -7,7 +7,6 @@
 */
 
 //We will skip argment error handling
-//We suppose that the format is respected : leading 0 for hours before 10 (e.g., 09:05)
 
 const {argv} = require('process');
 
