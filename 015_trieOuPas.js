@@ -1,4 +1,3 @@
-//il suffit de loop For num[0] until num[lenght] et si jamais num[i] > num[i+1] return 'Pas Triee', sinon Trie
 /**
 * Trié ou pas
 */
@@ -8,3 +7,27 @@
 */
 
 const {argv} = require('process');
+
+//Check if at least 2 arguments are passed
+if(argv.length < 4){
+  //console.log("Veuillez entrer une liste d'entiers");
+  console.log("erreur.");
+} else {
+  let result = "Triée !"; //default value
+  for(let i=2; i<argv.length-1; i++){
+    let num = Number(argv[i]); //current number
+    let numSucc = Number(argv[i+1]);//next number
+    //if not integers, end the script and display "erreur"
+    if(!Number.isInteger(num) || !Number.isInteger(numSucc)){
+      result = "erreur.";
+      break;
+    } else {
+      //if next number < current number, the list is not sorted, result is updated to "Pas triée !"
+      if(num > numSucc){
+        result = "Pas triée !";
+        //we could break; here and display result but if there is a Non integer further in the list the script won't return an error.
+      }
+    }
+  }
+  console.log(result);
+}
