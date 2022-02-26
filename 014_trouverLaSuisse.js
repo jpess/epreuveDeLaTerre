@@ -8,7 +8,6 @@
 
 //Retrieve argv
 const {argv} = require('process');
-let resultSortedArray = [];
 
 //Check if 3 argv have been passed
 if(argv.length !== 5){
