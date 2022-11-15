@@ -30,10 +30,10 @@ if( argv.length > 2){
   });
   // Test if letterIndex has been found in alphabet Array (otherwise the argument might not be a letter)
   if(letterIndex !== ''){
-    console.log(result + "\n");
+    console.log(result);
   } else {
-    console.log("Please enter a letter as argument.");
+    console.log("error : Please enter a letter as argument.");
   }
 } else {
-  console.log("Need a argument");
+  console.log("error : Need a argument");
 }
