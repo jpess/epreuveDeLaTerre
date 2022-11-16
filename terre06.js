@@ -12,10 +12,10 @@ import { argv } from 'node:process';
 
 if( argv.length !== 3 ){
   //Test if exactly ONE argument is passed
-  console.log("Merci d'executer le programme avec un et un seul argument");
+  console.log("erreur : Merci d'executer le programme avec un et un seul argument");
 } else if( typeof argv[2] !== 'string' ){
   //Test if argument is type of String
-  console.log("Merci de passer une chaine de caractere en argument");
+  console.log("erreur : Merci de passer une chaine de caractere en argument");
 } else {
   const str = argv[2];
   reverseStr = "";
