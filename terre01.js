@@ -9,7 +9,8 @@
 */
 
 // The path module provides utilities for working with file and directory paths.
-const path = require('path');
+//const path = require('path');
+import * as path from 'path';
 
 // __filename contains the absolute file path of the current module.
 // console.log(__filename); output is /media/.../.../Epreuve_de_la_Terre/002_nomDuProgramme.js
