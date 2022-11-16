@@ -7,7 +7,9 @@
 */
 
 //Get the function arguments
-const { argv } = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
+
 let result = 'erreur.';
 //Check if two arguments are passed and they are Integers
 if( argv.length === 4){
