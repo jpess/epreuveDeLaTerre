@@ -6,11 +6,12 @@
 * Write a program that tells if an integer list is sorted or not
 */
 
-const {argv} = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 //Check if at least 2 arguments are passed
 if(argv.length < 4){
-  //console.log("Veuillez entrer une liste d'entiers");
+  //console.log("erreur : Veuillez entrer une liste d'entiers");
   console.log("erreur.");
 } else {
   let result = "Triée !"; //default value
