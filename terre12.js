@@ -8,7 +8,8 @@
 
 //We will skip argument error handling, and we suppose the time format is respected (no 12:30AM, nor 24:20PM)
 
-const {argv} = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 //Retrieve argv[2] as a String
 const time12h = argv[2];
@@ -35,7 +36,7 @@ switch (hours12) {
       //Add 12 to hours12, then mod 24
       hours12 = (Number(hours12) + 12) % 24;
     } else {
-      console.log("Erreur de format..");
+      console.log("erreur de format..");
     }
 }
 
