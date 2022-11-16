@@ -7,7 +7,8 @@
 */
 
 //Retrieve the arguments
-const { argv } = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 if( argv.length !== 3 ){
   //Test if exactly ONE argument is passed
