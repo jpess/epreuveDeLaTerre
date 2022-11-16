@@ -7,6 +7,7 @@
 */
 
 // process.argv returns an array containing the command-line arguments passed when the Node.js process was launched
+/*
 const process = require('process');
 const arguments = process.argv;
 
@@ -14,5 +15,11 @@ const arguments = process.argv;
 for(let i=2; i<arguments.length; i++){
   console.log(arguments[i]);
 }
+*/
 
+//ES6 Method
+import { argv } from 'node:process';
+for(let i=2; i<argv.length; i++){
+  console.log(argv[i]);
+}
 // Tips: another syntax exists const { argv } = require('process'); to get the argument array from process in one line
