@@ -8,7 +8,8 @@
 
 //We will skip argment error handling
 
-const {argv} = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 //Retrieve argv[2] as a String
 const time24h = argv[2];
