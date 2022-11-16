@@ -7,7 +7,8 @@
 */
 
 //Retrieve argv
-const {argv} = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 //Check if 3 argv have been passed
 if(argv.length !== 5){
