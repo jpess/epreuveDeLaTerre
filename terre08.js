@@ -5,18 +5,19 @@
 /*
 * Write a program that displays the result argument 1 to the power argument 2
 */
-const { argv } = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 if( argv.length !== 4){
-  console.log("Veillez entrer 2 arguments.");
+  console.log("erreur : Veillez entrer 2 arguments.");
 } else if( isNaN(argv[2]) || isNaN(argv[3])){
-    console.log("Veuillez entrer 2 nombres.");
+    console.log("erreur : Veuillez entrer 2 nombres.");
 } else if( argv[3] < 0){
-    console.log("L'exposant ne peut pas etre negatif.");
+    console.log("erreur : L'exposant ne peut pas etre negatif.");
 } else if( argv[2] < 0){
-    console.log("On va rester sur des nombres positifs pour l'instant ;) ");
+    console.log("erreur : On va rester sur des nombres positifs pour l'instant ;) ");
 } else if( !Number.isInteger( Number( argv[3] ) ) ){
-    console.log("On va rester sur des expostants entiers aussi :) ");
+    console.log("erreur : On va rester sur des expostants entiers aussi :) ");
 } else {
     let result = 1;
     for(let i = 0; i < argv[3]; i++){
