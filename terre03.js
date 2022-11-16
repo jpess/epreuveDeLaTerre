@@ -7,13 +7,14 @@
 *
 * Requirement: use a loop
 */
+// Retrieve the array of arguments
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 // Array of alphabet letters
 const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
-// Retrieve the array of arguments
-//const { argv } = require('process');
-import { argv } from 'node:process';
+
 let result = '';
 
 // Test if an argument has been passed (ommit the 2 first __direname and __filename)
