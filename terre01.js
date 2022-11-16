@@ -10,11 +10,14 @@
 
 // The path module provides utilities for working with file and directory paths.
 //const path = require('path');
-import * as path from 'path';
+import { argv } from 'node:process';
+console.log(argv[0]);
 
+/*
 // __filename contains the absolute file path of the current module.
 // console.log(__filename); output is /media/.../.../Epreuve_de_la_Terre/002_nomDuProgramme.js
 
 // path.basename() returns the last portion of a path
 const filename = path.basename(__filename);
 console.log(filename);
+*/
