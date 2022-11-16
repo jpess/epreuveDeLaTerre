@@ -18,15 +18,15 @@ if( argv.length === 3){
 
   //Check if param is even by testing the result of modulo 2 is 0
   if(param % 2 === 0){
-    console.log("pair");
+    console.log("Pair");
   } else if(param % 2 === 1 || param % 2 === -1) {
     //Check if param is odd if modulo 2 returns 1 (or -1 if negative odd)
-    console.log("impair");
+    console.log("Impair");
   } else {
     //If any other result than the ones expected, log 'Do not fool me.'
-    console.log("Tu ne me la mettras pas à l’envers.");
+    console.log("error : Tu ne me la mettras pas à l’envers.");
   }
 } else {
   //If there is no param or if there are more than 1 param, log 'Do not fool me.'
-  console.log("Tu ne me la mettras pas à l’envers.");
+  console.log("error : Tu ne me la mettras pas à l’envers.");
 }
