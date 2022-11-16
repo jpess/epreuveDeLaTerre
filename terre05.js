@@ -21,7 +21,7 @@ if( argv.length === 4){
     if((x-y > 0) && y !== '0'){
       const quotient = Math.floor(x / y);
       const remainder = x % y;
-      result = `résultat: ${quotient} \n reste: ${remainder}`;
+      result = `Résultat: ${quotient} \n Reste: ${remainder}`;
     }
 
   }
