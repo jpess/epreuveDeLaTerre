@@ -12,11 +12,11 @@ import { argv } from 'node:process';
 
 //Check if 3 argv have been passed
 if(argv.length !== 5){
-  console.log("Veuillez entrer trois et seulement trois entiers.");
+  console.log("erreur : Veuillez entrer trois et seulement trois entiers.");
 } else if(isNaN(argv[2]) || isNaN(argv[3] || isNaN(argv[4]))){
-  console.log("Veuillez entrer trois nombres.");
+  console.log("erreur : Veuillez entrer trois nombres.");
 } else if(!Number.isInteger(Number(argv[2])) || !Number.isInteger(Number(argv[3])) || !Number.isInteger(Number(argv[4]))){
-  console.log("Veuillez entrer des nombres entiers.");
+  console.log("erreur : Veuillez entrer des nombres entiers.");
 } else if(argv[2] === argv[3] || argv[2] === argv[4] || argv[3] === argv[4]){
   console.log("erreur.");
 } else {
