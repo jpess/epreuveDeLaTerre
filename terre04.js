@@ -9,7 +9,8 @@
 */
 
 // Retrieve the array of arguments
-const { argv } = require('process');
+//const { argv } = require('process');
+import { argv } from 'node:process';
 
 // Test if an argument has been passed (ommit the 2 first __direname and __filename)
 if( argv.length === 3){
