@@ -16,4 +16,5 @@ for (let i = 0; i < alphabet.length; i++) {
 }
 
 // Display result wih a line break
-console.log(result + "\n");
+//console.log(result + "\n");
+console.log(result);
