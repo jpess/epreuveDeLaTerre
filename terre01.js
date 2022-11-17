@@ -11,7 +11,9 @@
 // The path module provides utilities for working with file and directory paths.
 //const path = require('path');
 import { argv } from 'node:process';
-console.log(argv);
+import path from 'path';
+
+console.log(path.basename(__filename));
 
 /*
 // __filename contains the absolute file path of the current module.
